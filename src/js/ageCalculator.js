@@ -29,9 +29,12 @@ export default class AgeCalculator {
   yearsLeftCalc() {
     if (this.userAge < this.lifeExpectancy) {
       this.yearsLeft = this.lifeExpectancy - this.userAge
+      return this.yearsLeft
     } else {
       this.yearsLeft = this.userAge - this.lifeExpectancy;
+      return this.yearsLeft
     }
+
 
   }
 

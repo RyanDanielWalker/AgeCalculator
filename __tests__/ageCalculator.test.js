@@ -59,8 +59,12 @@ describe('AgeCalculator', () => {
     newUser.lifeExpectancy = 77
     expect(newUser.yearsLeftCalc()).toEqual(8);
   });
-  test('should add the string "You have ${yearsLeft} years left to live" as value for this.yearsLeft using template literals', () => {
-
+  test('should add string "You have ${this.yearsLeft} to live." as value for yearsLeft', () => {
+    let newUser = new AgeCalculator()
+    newUser.userAge = 32
+    newUser.lifeExpectancy = 77
+    newUser.yearsLeftCalc()
+    expect(newUser.yearsLeft).toEqual("You have 45 years left to live.")
   })
 })
 
