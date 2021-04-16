@@ -11,6 +11,10 @@ export default class AgeCalculator {
     return (this.userAge, this.lifeExpectancy)
   }
 
+  venusCalc() {
+
+  }
+
 
 
 
