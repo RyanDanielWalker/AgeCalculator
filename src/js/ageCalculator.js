@@ -4,6 +4,10 @@ export default class AgeCalculator {
     this.userAge = userAge;
   }
 
+  mercuryCalc() {
+
+  }
+
 
 
 
