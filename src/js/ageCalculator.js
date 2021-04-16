@@ -7,7 +7,8 @@ export default class AgeCalculator {
 
   mercuryCalc() {
     this.userAge = Math.round(this.userAge / .24)
-    return this.userAge
+    this.lifeExpectancy = Math.round(this.lifeExpectancy / .24)
+    return (this.userAge, this.lifeExpectancy)
   }
 
 
