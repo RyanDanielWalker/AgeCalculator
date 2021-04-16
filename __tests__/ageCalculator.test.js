@@ -53,6 +53,12 @@ describe('AgeCalculator', () => {
     newUser.lifeExpectancy = 77
     expect(newUser.yearsLeftCalc()).toEqual(45)
   });
+  test('should calculate how many years past life expectancy user has lived if they have lived past expectancy', () => {
+    let newUser = new AgeCalculator()
+    newUser.userAge = 85
+    newUser.lifeExpectancy = 77
+    expect(newUser.yearsLeftCalc()).toEqual(8);
+  });
 })
 
 
