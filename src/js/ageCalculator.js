@@ -32,8 +32,9 @@ export default class AgeCalculator {
     } else {
       this.yearsLeft = this.userAge - this.lifeExpectancy;
     }
-    return this.yearsLeft
+
   }
+
 
 
 
