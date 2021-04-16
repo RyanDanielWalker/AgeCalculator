@@ -13,6 +13,7 @@ export default class AgeCalculator {
 
   venusCalc() {
     this.userAge = Math.round(this.userAge / .62);
+    this.lifeExpectancy = Math.round(this.lifeExpectancy / .62)
     return this.userAge;
   }
 
