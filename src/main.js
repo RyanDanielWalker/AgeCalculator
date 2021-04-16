@@ -8,6 +8,7 @@ import AgeCalculator from '../src/js/ageCalculator.js';
 $("#planetForm").submit((event) => {
   event.preventDefault();
   let planetName = $("#planetChoice").val();
+  console.log(planetName)
   let userAge = $("#userAge").val();
   let lifeExpectancy = $("#lifeExpectancy").val();
   let newUser = new AgeCalculator(planetName, userAge, lifeExpectancy);
