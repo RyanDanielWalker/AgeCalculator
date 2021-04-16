@@ -47,8 +47,15 @@ describe('AgeCalculator', () => {
     newUser.jupiterCalc()
     expect(newUser.lifeExpectancy).toEqual(6)
   });
-
+  test('should calculate how many years a user has left to live based on age and life expectancy', () => {
+    let newUser = new AgeCalculator()
+    newUser.userAge = 32
+    newUser.lifeExpectancy = 77
+    expect(newUser.yearsLeftCalc()).toEqual(45)
+  });
 })
+
+
 
 
 

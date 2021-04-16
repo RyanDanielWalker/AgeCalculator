@@ -3,6 +3,7 @@ export default class AgeCalculator {
     this.planetName = planetName;
     this.userAge = userAge;
     this.lifeExpectancy = lifeExpectancy;
+    this.yearsLeft = 0;
   }
 
   mercuryCalc() {
@@ -23,6 +24,10 @@ export default class AgeCalculator {
   jupiterCalc() {
     this.userAge = Math.round(this.userAge / 11.86);
     this.lifeExpectancy = Math.round(this.lifeExpectancy / 11.86);
+  }
+
+  yearsLeftCalc() {
+
   }
 
 
