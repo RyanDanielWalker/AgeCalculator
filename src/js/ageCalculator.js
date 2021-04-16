@@ -17,6 +17,10 @@ export default class AgeCalculator {
     return this.userAge;
   }
 
+  marsCalc() {
+
+  }
+
 
 
 

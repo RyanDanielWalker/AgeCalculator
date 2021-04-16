@@ -7,7 +7,6 @@ describe('AgeCalculator', () => {
     expect(newCalculator.userAge).toEqual(32)
     expect(newCalculator.lifeExpectancy).toEqual(77)
   });
-
   test('should calculate user age on Mercury based on inputted age', () => {
     let newUser = new AgeCalculator("Mercury", 32)
     newUser.mercuryCalc()
@@ -28,6 +27,12 @@ describe('AgeCalculator', () => {
     newUser.venusCalc()
     expect(newUser.lifeExpectancy).toEqual(124)
   });
+  test('should calculate user age on Mars based on inputted age', () => {
+    let newUser = new AgeCalculator("Mars", 32)
+    newUser.marsCalc()
+    expect(newUser.userAge).toEqual(17)
+  });
+
 
 })
 
