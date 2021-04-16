@@ -42,6 +42,11 @@ describe('AgeCalculator', () => {
     newUser.jupiterCalc()
     expect(newUser.userAge).toEqual(3)
   });
+  test('should calculate user life expectancy based on year length of Jupiter', () => {
+    let newUser = new AgeCalculator("Mars", 32, 77)
+    newUser.jupiterCalc()
+    expect(newUser.lifeExpectancy).toEqual(6)
+  });
 
 })
 
