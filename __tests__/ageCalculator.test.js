@@ -65,7 +65,14 @@ describe('AgeCalculator', () => {
     newUser.lifeExpectancy = 77
     newUser.yearsLeftCalc()
     expect(newUser.yearsLeft).toEqual("You have 45 years left to live.")
-  })
+  });
+  test('should add string "You have lived ${this.yearsLeft} years past your life expectancy." as value for yearsLeft if userAge exceeds planet life expectancy.', () => {
+    let newUser = new AgeCalculator()
+    newUser.userAge = 85
+    newUser.lifeExpectancy = 77
+    newUser.yearsLeftCalc()
+    expect(newUser.yearsLeft).toEqual("You have lived 8 years past your life expectancy.")
+  });
 })
 
 
