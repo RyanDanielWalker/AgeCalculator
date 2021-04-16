@@ -1,7 +1,7 @@
 import AgeCalculator from '../src/js/ageCalculator.js'
 
 describe('AgeCalculator', () => {
-  test('should create an object with two properties: planetName: Earth, userAge: 32, lifeExpectancy: 77', () => {
+  test('should create an object with three properties: planetName: Earth, userAge: 32, lifeExpectancy: 77', () => {
     const newCalculator = new AgeCalculator("earth", 32, 77)
     expect(newCalculator.planetName).toEqual("earth");
     expect(newCalculator.userAge).toEqual(32)
@@ -32,6 +32,12 @@ describe('AgeCalculator', () => {
     newUser.marsCalc()
     expect(newUser.userAge).toEqual(17)
   });
+  test('should calculate user life expectancy based on year length of Mars', () => {
+    let newUser = new AgeCalculator("Mars", 32, 77)
+    newUser.marsCalc()
+    expect(newUser.lifeExpectancy).toEqual(41)
+  });
+
 
 
 })
