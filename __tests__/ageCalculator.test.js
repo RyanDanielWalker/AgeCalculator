@@ -10,7 +10,7 @@ describe('AgeCalculator', () => {
 
   test('should calculate users age on Mercury based on inputted age', () => {
     let newUser = new AgeCalculator("mercury", 32)
-    expect(newUser.mercuryCalc()).toEqual(Math.round(32 * .24))
+    expect(newUser.mercuryCalc()).toEqual(Math.round(32 / .24))
   });
 })
 
