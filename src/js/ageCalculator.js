@@ -5,10 +5,10 @@ export default class AgeCalculator {
     this.lifeExpectancy = lifeExpectancy;
   }
 
-  // mercuryCalc() {
-  //   this.userAge = Math.round(this.userAge * .24)
-  //   return this.userAge
-  // }
+  mercuryCalc() {
+    this.userAge = Math.round(this.userAge * .24)
+    return this.userAge
+  }
 
 
 
