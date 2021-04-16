@@ -17,6 +17,7 @@ export default class AgeCalculator {
 
   marsCalc() {
     this.userAge = Math.round(this.userAge / 1.88);
+    this.lifeExpectancy = Math.round(this.lifeExpectancy / 1.88);
   }
 
 
