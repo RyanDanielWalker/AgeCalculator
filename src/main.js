@@ -9,7 +9,7 @@ import AgeCalculator from '../src/js/ageCalculator.js';
 
 
 
-// $(document).ready(() => {
+
 $("#planetForm").submit((event) => {
   event.preventDefault();
   let userAge = $("#userAge").val();
@@ -32,9 +32,11 @@ $("#planetForm").submit((event) => {
     }
     let result = newUser.result();
     $("#output").text(result);
-    console.log(result);
+    $("#clearButton").show(2000);
   } else {
     alert("Please complete all entry fields!");
   }
 });
-// });
+$("#clearButton").click(function () {
+  location.reload();
+})
