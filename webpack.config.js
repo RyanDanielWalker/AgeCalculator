@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
@@ -16,7 +16,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Super Galactic Age Calculator',
-      template: './src/index.html',
+      template: './index.html',
       inject: 'body'
     })
   ],
