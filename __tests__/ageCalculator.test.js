@@ -77,7 +77,7 @@ describe('AgeCalculator', () => {
     const newUser = new AgeCalculator("Mercury", 32, 77)
     newUser.yearsLeft = 12
     expect(newUser.result()).toEqual("Mercury 32 77 12")
-  })
+  });
 })
 
 

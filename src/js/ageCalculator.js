@@ -37,22 +37,9 @@ export default class AgeCalculator {
   }
 
   result() {
-    return `${this.planetName} ${this.userAge} ${this.lifeExpectancy} ${this.yearsLeft}`
+    return `Things works a little bit differently here on ${this.planetName}. Here, you would actually be about ${this.userAge} years old. That means that the life expectancy of someone from your demographic is right around ${this.lifeExpectancy}.  Therefore, ${this.yearsLeft}`;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
