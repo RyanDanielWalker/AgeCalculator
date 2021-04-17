@@ -37,7 +37,7 @@ export default class AgeCalculator {
   }
 
   result() {
-
+    return `${this.planetName} ${this.userAge} ${this.lifeExpectancy} ${this.yearsLeft}`
   }
 
 
