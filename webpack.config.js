@@ -10,30 +10,18 @@ module.exports = {
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './src'
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: '',
+      title: 'Super Galactic Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
   ],
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "eslint-loader"
-      },
       {
         test: /\.(gif|png|jpe?g)$/,
         use: [
@@ -53,6 +41,18 @@ module.exports = {
           'html-loader'
         ]
       },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader"
+      }
     ]
   }
 };

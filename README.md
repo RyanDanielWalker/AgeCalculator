@@ -35,7 +35,8 @@ This application will allow the user to enter their age and the life expectancy 
 
 ## Known Bugs
 
-There are no bugs 
+Current webpack configuration is interfering with image loading.\
+Only README is being displayed on github pages deployment. 
 
 ## License 
 MIT 
