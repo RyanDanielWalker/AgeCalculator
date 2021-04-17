@@ -36,6 +36,10 @@ export default class AgeCalculator {
     }
   }
 
+  result() {
+
+  }
+
 
 
 

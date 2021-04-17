@@ -73,6 +73,11 @@ describe('AgeCalculator', () => {
     newUser.yearsLeftCalc()
     expect(newUser.yearsLeft).toEqual("You have lived 8 years past your life expectancy.")
   });
+  test('should return a string with the values of AgeCalculator populated using template literals', () => {
+    const newUser = new AgeCalculator("Mercury", 32, 77)
+    newUser.yearsLeft = 12
+    expect(newUser.result()).toEqual("Mercury 32 77 12")
+  })
 })
 
 
