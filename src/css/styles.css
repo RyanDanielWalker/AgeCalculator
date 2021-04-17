@@ -1,7 +1,40 @@
+body {
+  font-family: 'Zen Dots', cursive;
+  text-align: center;
+  font-size: larger;
+  background-color: #301934;
+}
 #submitButton{
   margin: auto;
   width: 50%;
-  border: solid 3px;
+  background-color: #fffdd0;
+  border: solid #301934 3px;
+  margin-bottom: 10px;
   display: block;
+
 }
+#logo {
+border:solid black 3px;
+margin-bottom: 10px;
+}
+#frontPage {
+  margin-top: 5vh;
+  background-color: #cebd32;
+  padding: 5px;
+  box-shadow: 0 0 15px 10px #fffdd0;
+}
+.form-control:focus {
+  border-color: #301934;
+  box-shadow: 0 0 0 0.2rem #301934;
+}
+.form-control {
+  margin: auto;
+  width: 80%;
+  margin-bottom: 10px;
+  background-color: 	#fffdd0;
+}
+
+
+
+
   
