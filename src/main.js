@@ -31,8 +31,10 @@ $("#planetForm").submit((event) => {
       newUser.yearsLeftCalc();
     }
     let result = newUser.result();
+    $("#output").text(result);
     console.log(result);
   } else {
-    alert("Please make a selection in all entry fields!");
+    alert("Please complete all entry fields!");
   }
 });
+// });

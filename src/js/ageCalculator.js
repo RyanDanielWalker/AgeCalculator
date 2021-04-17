@@ -28,16 +28,14 @@ export default class AgeCalculator {
 
   yearsLeftCalc() {
     if (this.userAge < this.lifeExpectancy) {
-      this.yearsLeft = `You have ${this.lifeExpectancy - this.userAge} years left to live.`;
-      return (this.lifeExpectancy - this.userAge);
+      this.yearsLeft = `you have about ${this.lifeExpectancy - this.userAge} years left to live.`;
     } else {
-      this.yearsLeft = `You have lived ${this.userAge - this.lifeExpectancy} years past your life expectancy.`;
-      return (this.userAge - this.lifeExpectancy);
+      this.yearsLeft = `you have lived about ${this.userAge - this.lifeExpectancy} years past your life expectancy.`;
     }
   }
 
   result() {
-    return `Things works a little bit differently here on ${this.planetName}. Here, you would actually be about ${this.userAge} years old. That means that the life expectancy of someone from your demographic is right around ${this.lifeExpectancy}.  Therefore, ${this.yearsLeft}`;
+    return `Things work a little bit differently here on ${this.planetName}. Here, you would actually be about ${this.userAge} years old. The life expectancy for someone from your demographic is right around ${this.lifeExpectancy} years.  Therefore, ${this.yearsLeft}`;
   }
 }
 
