@@ -5,27 +5,22 @@ export default class AgeCalculator {
     this.lifeExpectancy = lifeExpectancy;
     this.yearsLeft = 0;
   }
-
   mercuryCalc() {
     this.userAge = Math.round(this.userAge / .24);
     this.lifeExpectancy = Math.round(this.lifeExpectancy / .24);
   }
-
   venusCalc() {
     this.userAge = Math.round(this.userAge / .62);
     this.lifeExpectancy = Math.round(this.lifeExpectancy / .62);
   }
-
   marsCalc() {
     this.userAge = Math.round(this.userAge / 1.88);
     this.lifeExpectancy = Math.round(this.lifeExpectancy / 1.88);
   }
-
   jupiterCalc() {
     this.userAge = Math.round(this.userAge / 11.86);
     this.lifeExpectancy = Math.round(this.lifeExpectancy / 11.86);
   }
-
   yearsLeftCalc() {
     if (this.userAge < this.lifeExpectancy) {
       this.yearsLeft = `you have about ${this.lifeExpectancy - this.userAge} years left to live.`;
@@ -33,11 +28,7 @@ export default class AgeCalculator {
       this.yearsLeft = `you have lived about ${this.userAge - this.lifeExpectancy} years past your life expectancy.`;
     }
   }
-
   result() {
     return `Things work a little bit differently here on ${this.planetName}. Here, you would actually be about ${this.userAge} years old. The life expectancy for someone from your demographic is right around ${this.lifeExpectancy} years.  Therefore, ${this.yearsLeft}`;
   }
 }
-
-
-

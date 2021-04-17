@@ -4,7 +4,7 @@ body {
   font-size: larger;
   background-color: #301934;
 }
-#submitButton{
+#submitButton {
   margin: auto;
   width: 50%;
   background-color: #fffdd0;
@@ -35,12 +35,11 @@ body {
 #output {
   font-size: x-large;
 }
-#clearPage {
+#clearButton {
   display: none;
   margin: auto;
   width: 50%;
   background-color: #fffdd0;
   border: solid #301934 3px;
   margin-bottom: 10px;
-  display: block;
 }

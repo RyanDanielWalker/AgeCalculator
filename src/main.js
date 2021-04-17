@@ -4,12 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import AgeCalculator from '../src/js/ageCalculator.js';
 
-
-
-
-
-
-
 $("#planetForm").submit((event) => {
   event.preventDefault();
   let userAge = $("#userAge").val();
@@ -32,11 +26,16 @@ $("#planetForm").submit((event) => {
     }
     let result = newUser.result();
     $("#output").text(result);
-    $("#clearButton").show(2000);
+    $("#clearButton").show();
   } else {
     alert("Please complete all entry fields!");
   }
 });
 $("#clearButton").click(function () {
   location.reload();
-})
+});
+
+
+
+
+
