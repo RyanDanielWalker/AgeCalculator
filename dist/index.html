@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Super Galactic Age Calculator</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" id="frontPage">
+      <img src="/assets/images/planet.png" alt="Space Calculator Logo" id="logo">
+      <form id="planetForm">
+        <label for="inputFormControl1">Please enter your age:</label>
+        <input class="form-control" id="userAge" type="number" min="1" placeholder="">
+        <label for="inputFormControl2">Please enter the life expectancy for your demographic:</label>
+        <input class="form-control" id="lifeExpectancy" type="number" min="0" placeholder="">
+        <label for="selectFormControl">Please select a planet</label>
+        <select id="planetChoice" class="form-control">
+          <option selected></option>
+          <option val="1">Mercury</option>
+          <option val="Venus">Venus</option>
+          <option val="Mars">Mars</option>
+          <option val="Jupiter">Jupiter</option>
+        </select>
+        <div>
+          <p id="output"></p>
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+        <button type="submit" id="clearButton">Clear Page</button>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>
