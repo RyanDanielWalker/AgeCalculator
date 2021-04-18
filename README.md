@@ -35,7 +35,7 @@ This application will allow the user to enter their age and the life expectancy 
 
 ## Known Bugs
 
-Only README is being displayed on github pages deployment. 
+Webpage not displaying properly. 
 
 ## License 
 MIT 
