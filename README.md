@@ -35,7 +35,7 @@ This application will allow the user to enter their age and the life expectancy 
 
 ## Known Bugs
 
-Webpage not displaying properly. 
+No bugs found.
 
 ## License 
 MIT 
