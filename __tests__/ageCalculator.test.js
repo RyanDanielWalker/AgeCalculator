@@ -59,24 +59,24 @@ describe('AgeCalculator', () => {
     newUser.lifeExpectancy = 77
     expect(newUser.yearsLeftCalc()).toEqual(8);
   });
-  test('should add string "You have ${this.yearsLeft} left to live." as value for yearsLeft', () => {
+  test('should add string "you have about ${this.yearsLeft} left to live." as value for yearsLeft', () => {
     let newUser = new AgeCalculator()
     newUser.userAge = 32
     newUser.lifeExpectancy = 77
     newUser.yearsLeftCalc()
-    expect(newUser.yearsLeft).toEqual("You have 45 years left to live.")
+    expect(newUser.yearsLeft).toEqual("you have about 45 years left to live.")
   });
-  test('should add string "You have lived ${this.yearsLeft} years past your life expectancy." as value for yearsLeft if userAge exceeds planet life expectancy.', () => {
+  test('should add string "you have lived about ${this.yearsLeft} years past your life expectancy." as value for yearsLeft if userAge exceeds planet life expectancy.', () => {
     let newUser = new AgeCalculator()
     newUser.userAge = 85
     newUser.lifeExpectancy = 77
     newUser.yearsLeftCalc()
-    expect(newUser.yearsLeft).toEqual("You have lived 8 years past your life expectancy.")
+    expect(newUser.yearsLeft).toEqual("you have lived about 8 years past your life expectancy.")
   });
   test('should return a string with the values of AgeCalculator populated using template literals', () => {
     const newUser = new AgeCalculator("Mercury", 32, 77)
     newUser.yearsLeft = 12
-    expect(newUser.result()).toEqual("Mercury 32 77 12")
+    expect(newUser.result()).toEqual("Things work a little bit differently here on Mercury. Here, you would actually be about 32 years old. The life expectancy for someone from your demographic is right around 77 years.  Therefore, 12")
   });
 })
 
