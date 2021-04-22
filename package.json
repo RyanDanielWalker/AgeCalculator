@@ -1,6 +1,6 @@
 {
   "homepage": "https://ryandanielwalker.github.io/AgeCalculator/",
-  "name": "Super Galactic Age Calculator",
+  "name": "super_galactic_age_calculator",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -13,7 +13,7 @@
     "test": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ryan Walker",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
